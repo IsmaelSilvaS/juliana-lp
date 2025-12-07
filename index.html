@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliana Beauty Boss</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/favicon.webp" type="image/webp">
+    <meta name="description" content="Juliana Beauty Boss, studio de estética facial localizado em Goiânia. Realizamos designer de sobrancelhas, limpeza de pele, extensão de cílios e outros procedimentos estéticos com horário marcado.">
+    <meta name="keywords" content="estética facial, designer de sobrancelhas, limpeza de pele, extensão de cílios, Goiânia, estética, beleza">
+    <meta name="author" content="Juliana Beauty Boss">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Juliana Beauty Boss - Studio de Estética Facial em Goiânia">
+    <meta property="og:description" content="Transforme sua beleza no Juliana Beauty Boss. Designer de sobrancelhas, limpeza de pele, extensão de cílios e outros tratamentos de estética facial. Agende seu horário em Goiânia!">
+    <meta property="og:url" content="https://www.seusite.com.br">
+    <meta property="og:image" content="https://www.seusite.com.br/imagens/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Juliana Beauty Boss">
+</head>
+<body>
+
+    <header>
+        <h1>JULIANA BEAUTY BOSS</h1>
+        <p>Realçando a sua melhor versão</p>
+    </header>
+
+    <div class="status-bar" id="statusBar">
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText">Verificando horário...</span>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Procedimentos</h2>
+        <div class="grid">
+            <div class="card" onclick="openModal('Design de Sobrancelhas', 'O design de sobrancelhas é personalizado e durante o procedimento é feito uma: Higienização profunda nos fios, mapeamento para descobrirmos o melhor design para suas sobrancelhas, respeitando a estrutura natural delas. Epilação dos pelos feito com linha, pinça ou cera de acordo com sua preferência, e o design é finalizado com um spa das sobrancelhas com produtos e massagens para acalmar e revitalizar a região da epilação.', 'R$ 45,00')">
+                <img src="./assets/img/designer-sobrancelhas.jpeg" alt="Sobrancelhas" class="card-img">
+                <div class="card-content">
+                    <h3>Design de Sobrancelhas</h3>
+                    <span class="btn-outline">Ver detalhes</span>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Limpeza de pele', 'A limpeza de pele personalizada é uma higienização profunda que serve para: desobstruir os poros, extrair os cravos, milium e sujidades da face. Proporcionando o controle da oleosidade, espinhas e cravos. Além de deixar a pele mais saudável e limpa!', 'R$ 180,00')">
+                <img src="./assets/img/limpeza-pele.jpeg" alt="Labios" class="card-img">
+                <div class="card-content">
+                    <h3>Limpeza de pele</h3>
+                    <span class="btn-outline">Ver detalhes</span>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Lash Lifting', 'O Lash Lifting é um procedimento que curva, alonga e pigmenta seus cílios naturais! Tem durabilidade de 20 a 40 dias, realçando ainda mais a beleza dos cílios de forma natural e sofisticada. Este procedimento custa R$ 100,00 e está incluso o lifting dos cílios + tintura + nutrição dos fios.', 'R$ 100,00')">
+                <img src="./assets/img/lash-lifting.jpeg" alt="Cilios" class="card-img">
+                <div class="card-content">
+                    <h3>Lash Lifting</h3>
+                    <span class="btn-outline">Ver detalhes</span>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Brow Lamination', 'A Brow Lamination é um procedimento que muda a curvatura natural do seu fio tornando-os mais maleáveis. Dessa forma as sobrancelhas ficam mais preenchidas, com mais volume e menos falhas, além de você poder deixar os fios na posição em que desejar. O procedimento tem durabilidade de 25 a 45 dias, e está incluso a: química da brow + tintura dos fios + design das sobrancelhas + nutrição dos fios.', 'R$ 150,00')">
+                <img src="./assets/img/brow-lamination.jpeg" alt="Cilios" class="card-img">
+                <div class="card-content">
+                    <h3>Brow Lamination</h3>
+                    <span class="btn-outline">Ver detalhes</span>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Dermaplaning', 'O Dermaplaning é um procedimento que remove as sujidades, maquiagens incrustadas, pelos e pele morta da face. Após o procedimento a pele fica mais lisa, com tons mais claros e com maior permeabilidade dos produtos de skincare. Neste procedimento está incluso a higienização, o dermaplaning, associação de alta frequência, led terapia e hidratação. ', 'R$ 120,00')">
+                <img src="./assets/img/lash-lifting.jpeg" alt="Cilios" class="card-img">
+                <div class="card-content">
+                    <h3>Dermaplaning</h3>
+                    <span class="btn-outline">Ver detalhes</span>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Extensão de cílios', 'A extensão de cílios é um procedimento que trás alongamento e volume para os cílios. Tem durabilidade de 12 a 35 dias, sendo necessária a manutenção após 15 dias do procedimento. Hoje eu trabalho com as técnicas de volume brasileiro, efeito rímel, efeito fox, volume 3D, 4D e 5D.', 'R$ 150,00')">
+                <img src="./assets/img/extensao-cilios.jpeg" alt="Cilios" class="card-img">
+                <div class="card-content">
+                    <h3>Extensão de cílios</h3>
+                    <span class="btn-outline">Ver detalhes</span>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Design com tintura', 'Durante o design de sobrancelhas com tintura  é feito uma: Higienização profunda nos fios, mapeamento para descobrirmos o melhor design para suas sobrancelhas, respeitando a estrutura natural delas. Epilação dos pelos feito com linha, pinça ou cera de acordo com sua preferência, em seguida aplicamos a tintura e deixamos agir por uns 10 minutinhos e finalizamos com um spa das sobrancelhas com produtos e massagens para acalmar e revitalizar a região da epilação.', 'R$ 55,00')">
+                <img src="./assets/img/lash-lifting.jpeg" alt="Cilios" class="card-img">
+                <div class="card-content">
+                    <h3>Design com tintura</h3>
+                    <span class="btn-outline">Ver detalhes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: white; border-radius: 20px; margin-top: 2rem;">
+        <h2 class="section-title">Cursos Profissionalizantes</h2>
+        <div class="grid">
+            <div class="card" onclick="openModal('Curso Design Master', 'Aprenda do zero ao avançado e torne-se uma referência em sobrancelhas.', 'Consultar valor')">
+                <img src="./assets/img/curso-designer.jpg" alt="Curso" class="card-img">
+                <div class="card-content">
+                    <h3>Curso Design Master</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 10px;">Presencial • Com Certificado</p>
+                    <span class="btn-outline">Saiba mais</span>
+                </div>
+            </div>
+             <div class="card" onclick="openModal('Mentoria VIP', 'Um dia inteiro de aperfeiçoamento exclusivo para profissionais iniciantes.', 'Consultar valor')">
+                <img src="./assets/img/mentoria.jpg" alt="Mentoria" class="card-img">
+                <div class="card-content">
+                    <h3>Mentoria VIP</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 10px;">Exclusivo • Prático</p>
+                    <span class="btn-outline">Saiba mais</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a id="whatsappFloat" class="float-cart" href="#" target="_blank" onclick="finalizeOrder(event)">
+        <span>Agendar no WhatsApp</span>
+        <span id="cartCount" style="background:red; padding: 2px 8px; border-radius:50%; font-size: 0.8rem; display:none;">0</span>
+    </a>
+
+    <footer>
+        <h3>Juliana Beauty Boss</h3>
+        <p>Seg a Sex: 07h às 17h | Sáb: 08h às 13h</p>
+        <p style="margin-top: 10px; font-size: 0.8rem; color: var(--gold);">© 2025 Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle" style="margin-bottom: 1rem;">Título</h2>
+            <p id="modalDesc" style="margin-bottom: 1rem; color: #666;">Descrição completa aqui.</p>
+            <h3 id="modalPrice" style="color: var(--primary-green); margin-bottom: 1.5rem;">R$ 0,00</h3>
+            
+            <div class="modal-buttons">
+                <button class="btn-gold" onclick="addToCart()">Adicionar e ver mais</button>
+                <button class="btn-green" onclick="directToWhatsapp()">Ir para WhatsApp agora</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
