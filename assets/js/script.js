@@ -29,7 +29,7 @@ function checkStatus() {
     if (isOpen) {
         dot.classList.remove('closed');
         dot.classList.add('open');
-        text.innerText = "Estamos Abertos! • Seg a Sex (7h-17h) e Sáb (8h-13h)";
+        text.innerText = "Estamos Abertos • Somente com hora marcada";
     } else {
         dot.classList.remove('open');
         dot.classList.add('closed');
